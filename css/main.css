@@ -1,0 +1,83 @@
+.main {
+    background-image: url("../assets/main.jpg");
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.7fr 0.7fr 8fr;
+    gap: 2px 2px;
+    grid-template-areas: "new ." "level level" "time turn" "table table";
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.new {
+    grid-area: new;
+    height: 100%;
+}
+
+button {
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.level {
+    grid-area: level;
+    background-color: #12885b;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+h4, h5 {
+    margin: 4px;
+}
+
+.table {
+    grid-area: table;
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background-color: deepskyblue;
+    border: 2px solid gray;
+}
+
+td:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.time {
+    grid-area: time;
+    background-color: #12885b;
+    text-align: center;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.turn {
+    grid-area: turn;
+    background-color: #12885b;
+    text-align: center;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.changeColor {
+    background-color: rgb(107, 63, 32);
+    color: gold;
+}

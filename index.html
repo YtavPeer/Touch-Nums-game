@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>touch nums</title>
+</head>
+
+<body onload="init()" class="main">
+    <div class="grid-wrapper">
+
+        <div class="new">
+            <button onclick="init()">New Game</button>
+        </div>
+
+        <div class="level">
+            <form onchange="levelChange(event)">
+                <h4>Choose Your Level:</h4>
+                <input type="radio" id="Easy" name="diff" value="4">
+                <label for="male">easy</label>
+                <input type="radio" id="Medium" name="diff" value="5">
+                <label for="male">Medium</label>
+                <input type="radio" id="Hard" name="diff" value="6">
+                <label for="female">Hard</label>
+                <input type="radio" id="Extreme" name="diff" value="7">
+                <label for="other">Extreme</label>
+            </form>
+        </div>
+
+        <div class="time">
+            <h4>Game Time:</h4>
+            <h5></h5>
+        </div>
+
+        <div class="turn">
+            <h4>Turn Number:</h4>
+            <h5>1</h5>
+        </div>
+
+        <div class="table" border="1px">
+            <table>
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
